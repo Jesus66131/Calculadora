@@ -21,10 +21,7 @@ public class Calculadora {
         this.result = result;
     }
 
-    @Override
-    public String toString() {
-        return "Calculadora{" + "result=" + result + '}';
-    }
+    
     
     public double suma(int valor){
         this.result = result + valor;
