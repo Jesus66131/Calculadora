@@ -62,8 +62,12 @@ public class Run {
                 respAnt = resp;
                 break;
             case 4:
-                System.out.println("La división es: "+calculadora.div(num));
-                respAnt = resp;
+                if(num != 0){
+                    System.out.println("La división es: "+calculadora.div(num));
+                    respAnt = resp;
+                }else{
+                    System.out.println(calculadora.error());
+                }    
                 break;
             case 5:
                 System.out.println("El valor de la operación anterior es: " + calculadora.anterior( num, respAnt));
