@@ -39,10 +39,12 @@ public class Calculadora {
     public double div(int valor){
         if(valor==0){
             System.out.println("ERROR! No es posible la división entre cero");
+            return 0;
         }else{
             this.result = result / valor;
+            return result;
         }
-        return result;
+        
     }
     
     public double anterior(int valor, int respAnt){
